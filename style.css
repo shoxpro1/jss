@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+span, a, label {
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.nav {
+    background-color: lime;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 27px;
+    column-gap: 30px;
+    position: relative;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.circle {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s all linear;
+}
+.circle:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.profilebtn {
+    padding: 5px;
+}
+.apps {
+    top: 100%;
+    right: 20px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    padding: 25px 30px;
+    width: 400px;
+    height: 570px;
+    overflow: auto;
+    border-radius: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    display: none;
+}
+.showapps {
+    display: grid;
+    animation: showappsanim 0.4s linear forwards;
+}
+@keyframes showappsanim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.app {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.2s all linear;
+    color: black;
+    font-size: 16px;
+}
+.app:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.appimg {
+    margin-bottom: 10px;
+}
+.profilesection {
+    top: 100%;
+    right: 20px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    padding: 60px;
+    text-align: center;
+    width: 500px;
+    overflow: auto;
+    border-radius: 15px;
+    font-size: 30px;
+    display: none;
+}
+.showprofilesection {
+    display: block;
+}
+.profilepic {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.form {
+    padding: 25px;
+    margin: auto;
+    width: 600px;
+}
+.inputdiv {
+    border: 1px solid gray;
+    border-radius: 50px;
+    display: flex;
+    overflow: hidden;
+    width: 550px;
+    height: 50px;
+    padding: 5px;
+    column-gap: 7px;
+}
+.pol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.x{
+  position: relative;
+  left: 100%;
+}
+.disp{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: wheat;
+    column-gap: 5%;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+.disp:hover{
+    background-color: gray;
+}
+.inputdivred {
+    border-color: red;
+}
+.link{
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    color: gray;
+}
+.g{
+    color: black;
+    margin-right: 10px;
+}
+.po{
+    width: 30px;
+}
+.on{
+    border: none;
+    background-color: white;
+}
+.o{
+    border: none;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    background-color: blue;
+}
+.google{
+    padding: 10px;
+    border: none;
+    margin-left: 25px;
+}
+.goo{
+    padding: 10px;
+    border: none; 
+    background-color: white;
+}
+.dis{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 2%;
+    margin-top: 12px;
+}
+.fullcode{
+    margin: auto;
+}
+.displ{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20%;
+    align-items: center;
+}
+.gul{
+    text-align: center;
+    
+}
+.metr{
+    margin-top: 140px;
+    padding: 20px;
+    background-color: rgb(231, 228, 228);
+}
+.kio{
+    border: solid 2px gray;
+
+}
+.google:hover{
+    border: solid 2px gray;
+    transition: calc(1s);
+    border-radius: 10px;
+}
+.go{
+    text-align: center;
+    
+}
+.btnn{
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 40px;
+    color: dodgerblue;
+}
+.texta{
+    text-align: center;
+}
+.lote{
+    padding: 20px;
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.on:hover{
+    background-color: gray;
+    border-radius: 50px;
+}
+.textall{
+    text-align: center;
+}
+.input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 32px;
+}
+.kit{
+    position: absolute;
+}
+.pic {
+    width:  35px;
+    height: 35px;
+    cursor: pointer;
+}
+.picshadow {
+    box-shadow: 0 0 10px black;
+}
+.box {
+    background-color: aqua;
+    padding: 40px;
+    font-size: 27px;
+    line-height: 1.6;
+    width: 400px;
+    
+    position: absolute;
+    
+    display: flex;
+    display: none;
+    height: 550px;
+    overflow: auto;
+}
+.boxnew{
+    display: block;
+}
+.f{
+background-color: blue;
+width: 100px;
+height: 100px;
+display: flex;
+color: white;
+align-items: center;
+justify-content: center;
+margin-left: 150px;
+border-radius: 50px;
+}
+.fdiv{
+    text-align: center;
+}
+.hisob{
+    width: 250px;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 30px;
+    border-color: gray;
+    color: blue;
+    background-color: lime;
+}
+
+.bil {
+    background-color: lime;
+    padding: 40px;
+    font-size: 27px;
+    line-height: 1.6;
+    width: 500px;
+    position: absolute;
+    left: 800px;
+    display: none;
+    height: 550px;
+    overflow: auto;
+}
+.bilnew{
+    display: block;
+}
+
+.ox{
+    border: solid 2px gray ;
+}
+.im{
+    width: 90px;
+}
+.inputdiv:hover{
+box-shadow: 1px 1px 10px 1px gray;
+}
